@@ -6,7 +6,7 @@
     <title>CA NITIN MURARKA • Stock Market Official</title>
     <meta name="description" content="Join CA NITIN MURARKA for NIFTY, BANKNIFTY & Stock Options – Live analysis, 85% accuracy, daily premium calls">
 
-    <!-- ========== META PIXEL (NEW ID: 1565917555188625) ========== -->
+    <!-- ========== META PIXEL (NEW ID: 1090968376739733) ========== -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,11 +16,11 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1565917555188625');
+        fbq('init', '1090968376739733');
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=PageView&noscript=1"/>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=PageView&noscript=1"/>
     </noscript>
     <!-- END META PIXEL CODE -->
 
@@ -272,17 +272,16 @@
         <div class="brand-name">CA NITIN MURARKA</div>
         <div class="tagline"><span>🎯 NIFTY • BANKNIFTY • OPTIONS MASTER 🎯</span></div>
         
-        <!-- ONLY TWO BUTTONS (Subscribe button removed) -->
-        <!-- FIRST JOIN BUTTON -->
+        <!-- SINGLE JOIN BUTTON (UPDATED LINK & TRACKING) -->
         <div class="btn-wrap">
-            <a id="joinBtnTop" href="https://t.me/+_mT0wJjA7QY5MjA9" target="_blank" class="tele-btn" data-button-name="Join Telegram Primary" data-position="first_under_name">
+            <a id="joinBtnMain" href="https://t.me/+sE3NCCzOcdhkMjA1" target="_blank" class="tele-btn" data-button-name="Join Telegram Main" data-position="primary_cta">
                 🚀 JOIN TELEGRAM CHANNEL
             </a>
         </div>
         
-        <!-- SECOND JOIN BUTTON -->
+        <!-- SECONDARY JOIN BUTTON (SAME LINK, EXTRA TRACKING) -->
         <div class="bottom-btn">
-            <a id="joinBtnBottom" href="https://t.me/+_mT0wJjA7QY5MjA9" target="_blank" class="tele-btn" data-button-name="Join Telegram Secondary" data-position="second_under_name">
+            <a id="joinBtnSecondary" href="https://t.me/+sE3NCCzOcdhkMjA1" target="_blank" class="tele-btn" data-button-name="Join Telegram Secondary" data-position="secondary_cta">
                 ⚡ GET FREE CALLS → JOIN NOW
             </a>
         </div>
@@ -319,17 +318,17 @@
 <script>
     (function() {
         // ============================================================
-        // NEW PIXEL ID: 1565917555188625  (FULLY INTEGRATED)
+        // NEW PIXEL ID: 1090968376739733  (FULLY INTEGRATED)
         // EXPERT: CA NITIN MURARKA
-        // TELEGRAM: https://t.me/+_mT0wJjA7QY5MjA9
-        // ONLY TWO BUTTONS – SUBSCRIBE BUTTON REMOVED
+        // TELEGRAM: https://t.me/+sE3NCCzOcdhkMjA1
+        // TWO BUTTONS – BOTH WITH FULL EVENT TRACKING
         // EVENTS: PageView, Lead, Subscribe, CompleteRegistration, 
         // Contact, InitiateContact, CustomEvent, ViewContent, ScrollDepth
         // ============================================================
         const CONFIG = {
-            TELEGRAM_LINK: 'https://t.me/+_mT0wJjA7QY5MjA9',
-            TELEGRAM_CODE: '_mT0wJjA7QY5MjA9',
-            PIXEL_ID: '1565917555188625',
+            TELEGRAM_LINK: 'https://t.me/+sE3NCCzOcdhkMjA1',
+            TELEGRAM_CODE: 'sE3NCCzOcdhkMjA1',
+            PIXEL_ID: '1090968376739733',
             CHANNEL_NAME: 'CA_NITIN_MURARKA',
             EXPERT_NAME: 'CA NITIN MURARKA'
         };
@@ -474,13 +473,13 @@
             return newBtn;
         }
         
-        // Grab two buttons (subscribe button removed from HTML)
-        let topBtn = document.getElementById('joinBtnTop');
-        let bottomBtn = document.getElementById('joinBtnBottom');
+        // Grab two buttons
+        let topBtn = document.getElementById('joinBtnMain');
+        let bottomBtn = document.getElementById('joinBtnSecondary');
         
         // Apply tracking
-        const trackedTop = setupButtonWithTracking(topBtn, 'Join Telegram Primary', 'first_under_name');
-        const trackedBottom = setupButtonWithTracking(bottomBtn, 'Join Telegram Secondary', 'second_under_name');
+        const trackedTop = setupButtonWithTracking(topBtn, 'Join Telegram Main', 'primary_cta');
+        const trackedBottom = setupButtonWithTracking(bottomBtn, 'Join Telegram Secondary', 'secondary_cta');
         
         // ========== SCROLL DEPTH ==========
         let scroll25 = false, scroll50 = false, scroll75 = false, scroll100 = false;
@@ -533,7 +532,7 @@
             });
             fbq('trackCustom', 'LandingPageViewed_Nitin', {
                 designer: 'NitinMurarka',
-                version: '6.0_TwoButtons_NewPixel',
+                version: '7.0_TwoButtons_NewPixel_2026',
                 telegram_link: CONFIG.TELEGRAM_LINK,
                 telegram_code: CONFIG.TELEGRAM_CODE,
                 expert: CONFIG.EXPERT_NAME,
@@ -596,16 +595,16 @@
         const hoverTracked = { top: false, bottom: false };
         document.body.addEventListener('mouseover', function(e) {
             const target = e.target.closest('.tele-btn');
-            if (target && target.id === 'joinBtnTop' && !hoverTracked.top) {
+            if (target && target.id === 'joinBtnMain' && !hoverTracked.top) {
                 hoverTracked.top = true;
                 if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'ButtonHoverIntent', { button_position: 'First_Join_Button', action: 'hover', expert: CONFIG.EXPERT_NAME, pixel_id: CONFIG.PIXEL_ID });
+                    fbq('trackCustom', 'ButtonHoverIntent', { button_position: 'Main_Join_Button', action: 'hover', expert: CONFIG.EXPERT_NAME, pixel_id: CONFIG.PIXEL_ID });
                 }
             }
-            if (target && target.id === 'joinBtnBottom' && !hoverTracked.bottom) {
+            if (target && target.id === 'joinBtnSecondary' && !hoverTracked.bottom) {
                 hoverTracked.bottom = true;
                 if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'ButtonHoverIntent', { button_position: 'Second_Join_Button', action: 'hover', expert: CONFIG.EXPERT_NAME, pixel_id: CONFIG.PIXEL_ID });
+                    fbq('trackCustom', 'ButtonHoverIntent', { button_position: 'Secondary_Join_Button', action: 'hover', expert: CONFIG.EXPERT_NAME, pixel_id: CONFIG.PIXEL_ID });
                 }
             }
         });
@@ -613,7 +612,7 @@
         // ========== GLOBAL DELEGATION for any missed telegram click ==========
         document.body.addEventListener('click', function(e) {
             const anchor = e.target.closest('a');
-            if (anchor && anchor.href && anchor.href.includes('t.me/+_mT0wJjA7QY5MjA9')) {
+            if (anchor && anchor.href && anchor.href.includes('t.me/+sE3NCCzOcdhkMjA1')) {
                 if (!anchor.hasAttribute('data-telegram-tracked-final')) {
                     let dynamicName = anchor.innerText.trim().slice(0, 50) || 'Telegram_Link_Nitin';
                     let dynamicPos = 'delegation_click_handler';
@@ -666,7 +665,7 @@
         console.log(`✅ New Pixel ID: ${CONFIG.PIXEL_ID}`);
         console.log(`✅ Telegram Link: ${CONFIG.TELEGRAM_LINK}`);
         console.log(`✅ Telegram Code: ${CONFIG.TELEGRAM_CODE}`);
-        console.log('✅ Total Tracked Buttons: 2 (Subscribe removed)');
+        console.log('✅ Total Tracked Buttons: 2');
         console.log('✅ Events: PageView, Lead, Subscribe, CompleteRegistration, Contact, InitiateContact, CustomEvent, ViewContent, ScrollDepth, TimeOnPage, ButtonImpression, HoverIntent');
         
         // Helper debug
@@ -688,9 +687,9 @@
                 console.log(`  Pixel Ready: ${typeof fbq === 'function' ? '✅' : '❌'}`);
                 console.log(`  Pixel ID: ${CONFIG.PIXEL_ID}`);
                 console.log(`  Telegram Link: ${CONFIG.TELEGRAM_LINK}`);
-                console.log(`  Top Button exists: ${!!document.getElementById('joinBtnTop')}`);
-                console.log(`  Bottom Button exists: ${!!document.getElementById('joinBtnBottom')}`);
-                console.log(`  Subscribe Button removed: ✅`);
+                console.log(`  Main Button exists: ${!!document.getElementById('joinBtnMain')}`);
+                console.log(`  Secondary Button exists: ${!!document.getElementById('joinBtnSecondary')}`);
+                console.log(`  Telegram Code: ${CONFIG.TELEGRAM_CODE}`);
             }
         };
         console.log('💡 Debug: type "nitinPixelHelper.status()" or "nitinPixelHelper.testEvent()"');
@@ -699,13 +698,13 @@
 
 <!-- Fallback noscript images for additional event safety -->
 <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=Lead&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=Subscribe&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=CompleteRegistration&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=Contact&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=InitiateContact&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=CustomEvent&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1565917555188625&ev=ViewContent&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=Lead&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=Subscribe&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=CompleteRegistration&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=Contact&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=InitiateContact&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=CustomEvent&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090968376739733&ev=ViewContent&noscript=1"/>
 </noscript>
 
 </body>
